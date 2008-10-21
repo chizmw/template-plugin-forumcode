@@ -1,0 +1,11 @@
+This file documents the revision history for Template::Plugin::ForumCode
+
+0.0.3
+
+    - separated from Parley project
+    - correctly handle 'attr="foo"' in [img] markup (with tests)
+    - extended POD to better describe markup
+
+0.0.2 and before:
+
+    - see http://developer.berlios.de/projects/parley
