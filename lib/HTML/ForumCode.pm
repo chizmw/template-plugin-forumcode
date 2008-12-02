@@ -284,6 +284,13 @@ HTML::ForumCode - BBCode-esque forum markup
 
 =head1 SYNOPSIS
 
+Usage in a perl module:
+
+  use HTML::ForumCode;
+
+  my $tt_forum  = HTML::ForumCode->new();
+  my $formatted = $tt_forum->forumcode($text);
+
 Standard usage in a Template Toolkit file:
 
   # load the TT module
@@ -292,13 +299,6 @@ Standard usage in a Template Toolkit file:
   # ForumCodify some text
   [% ForumCode.forumcode('[b]bold[/u] [u]underlined[/u] [i]italic[/i]') %]
   [% ForumCode.forumcode('**bold** __underlined__') %]
-
-Usage in a perl module:
-
-  use HTML::ForumCode;
-
-  my $tt_forum  = HTML::ForumCode->new();
-  my $formatted = $tt_forum->forumcode($text);
 
 =head1 DESCRIPTION
 
@@ -314,7 +314,7 @@ ForumCode markup into the appropriate HTML markup.
 
 =head1 MARKUP
 
-The ForumCode plugin will perform the following transformations:
+HTML::ForumCode plugin will perform the following transformations:
 
 =over 4
 
@@ -468,6 +468,12 @@ Create a new instance of the plugin for TT usage
 =head2 forumcode
 
 The transformation function
+
+=head1 SEE ALSO
+
+L<Template::Plugin::ForumCode>,
+L<Template::Plugin::HTML>,
+L<Template::Toolkit>
 
 =head1 AUTHOR
 
