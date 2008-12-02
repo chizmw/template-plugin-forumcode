@@ -7,6 +7,7 @@ inc/Module/Install/Makefile.pm
 inc/Module/Install/Metadata.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
+lib/HTML/ForumCode.pm
 lib/Template/Plugin/ForumCode.pm
 Makefile.PL
 MANIFEST			This list of files
@@ -17,3 +18,5 @@ t/01.app.t
 t/02.pod.t
 t/03.podcoverage.t
 t/04.forumcode.t
+t/05.html-forumcode.t
+t/testlib/ForumCodeTest.pm
