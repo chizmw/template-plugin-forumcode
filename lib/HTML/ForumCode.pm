@@ -1,48 +1,37 @@
-package Template::Plugin::ForumCode;
+package HTML::ForumCode;
 # vim: ts=8 sts=4 et sw=4 sr sta
 use strict;
 use warnings;
 
-use base qw{ Template::Plugin };
-use base qw{ Template::Plugin::HTML };
-
 use version; our $VERSION = qv('0.0.4')->numify;
 
-use base qw{HTML::ForumCode};
+use Template::Plugin::HTML;
 
 sub new {
-    my ($class, $context, @args) = @_;
+    my ($class, @args) = @_;
 
-    # TODO - I'm sure this could be nicer
-    my $new_obj = bless {}, $class;
+    my $new_obj = bless {}, (ref($class)||$class);
     $new_obj->init;
 
     return $new_obj;
 }
 
-1;
-__END__
-
-sub new {
-    my ($class, $context, @args) = @_;
-
-    my $new_obj = bless {}, $class;
+sub init {
+    my $self = shift;
 
     # simple [x][/x] --> <x></x> tags
-    $new_obj->{simple_tags} = [qw{
+    $self->{simple_tags} = [qw{
         b
         u
         i
     }];
     # replacements; e.g. __x__ --> <u>x</u>
-    $new_obj->{replacements} = [
+    $self->{replacements} = [
         {   from => '__',       to => 'u'   },
         {   from => '\*\*',     to => 'b'   },
     ];
-    use Data::Dump qw(pp);
-    warn pp($new_obj);
 
-    return $new_obj;
+    return;
 }
 
 sub forumcode {
@@ -291,7 +280,7 @@ vim: ts=8 sts=4 et sw=4 sr sta
 
 =head1 NAME
 
-Template::Plugin::ForumCode - class for "ForumCode" filter
+HTML::ForumCode - BBCode-esque forum markup
 
 =head1 SYNOPSIS
 
@@ -306,9 +295,9 @@ Standard usage in a Template Toolkit file:
 
 Usage in a perl module:
 
-  use Template::Plugin::ForumCode;
+  use HTML::ForumCode;
 
-  my $tt_forum  = Template::Plugin::ForumCode->new();
+  my $tt_forum  = HTML::ForumCode->new();
   my $formatted = $tt_forum->forumcode($text);
 
 =head1 DESCRIPTION

@@ -17,13 +17,13 @@ BEGIN {
     use Test::More;
     plan tests => ( 3 + scalar(@forum_tests) );
 
-    use_ok( 'Template::Plugin::ForumCode' );
+    use_ok( 'HTML::ForumCode' );
 };
 
 # create a new thingy
-my $tt_forum = Template::Plugin::ForumCode->new();
-isnt(undef, $tt_forum, 'Plugin object is defined');
-isa_ok($tt_forum, 'Template::Plugin::ForumCode');
+my $tt_forum = HTML::ForumCode->new();
+isnt(undef, $tt_forum, 'ForumCode object is defined');
+isa_ok($tt_forum, 'HTML::ForumCode');
 
 # now some formatting tests for forumcode()
 foreach my $test (@forum_tests) {
