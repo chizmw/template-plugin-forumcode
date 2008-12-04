@@ -54,7 +54,8 @@ For a full description of available markup please see L<HTML::ForumCode>.
 =head1 SEE ALSO
 
 L<HTML::ForumCode>,
-L<Template::Toolkit>
+L<Template::Toolkit>,
+L<HTML::ForumCode::Cookbook>
 
 =head1 AUTHOR
 

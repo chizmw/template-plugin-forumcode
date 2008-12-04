@@ -473,7 +473,8 @@ The transformation function
 
 L<Template::Plugin::ForumCode>,
 L<Template::Plugin::HTML>,
-L<Template::Toolkit>
+L<Template::Toolkit>,
+L<HTML::ForumCode::Cookbook>
 
 =head1 AUTHOR
 
