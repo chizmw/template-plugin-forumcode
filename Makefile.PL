@@ -6,7 +6,7 @@ name            ('Template-Plugin-ForumCode');
 author          ('Chisel Wright<chiselwright@users.berlios.de>');
 abstract        ('TT plugin for BBCode-like markup');
 license         ('perl');
-version         ('0.0.4');
+version         ('0.0.5');
 
 requires(
     'Template::Plugin'              => '2.7',
