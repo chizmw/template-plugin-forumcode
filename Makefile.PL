@@ -19,5 +19,7 @@ build_requires(
     'Test::More'                    => '0.72',
 );
 
+no_index directory => 'examples';
+
 #auto_install;
 WriteAll;
