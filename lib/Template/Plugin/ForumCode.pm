@@ -51,6 +51,12 @@ markup through a HTML-esque syntax.
 
 For a full description of available markup please see L<HTML::ForumCode>.
 
+=head1 PUBLIC METHODS
+
+=head2 new
+
+Create a new instance of an HTML::ForumCode object.
+
 =head1 SEE ALSO
 
 L<HTML::ForumCode>,

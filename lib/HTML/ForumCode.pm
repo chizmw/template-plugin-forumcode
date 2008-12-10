@@ -469,6 +469,13 @@ Create a new instance of the plugin for TT usage
 
 The transformation function
 
+=head1 PRIVATE METHODS
+
+=head2 init
+
+Called during the object set-up to initialise the object with the required
+information and voodoo.
+
 =head1 SEE ALSO
 
 L<Template::Plugin::ForumCode>,

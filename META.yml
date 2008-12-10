@@ -22,4 +22,4 @@ requires:
   Template::Plugin: 2.7
   Template::Plugin::HTML: 2.62
   version: 0
-version: 0.0.4
+version: 0.0.5

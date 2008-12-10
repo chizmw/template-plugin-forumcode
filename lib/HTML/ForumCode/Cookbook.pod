@@ -33,6 +33,8 @@ of the marked up HTML. Also includes sample CSS for the preview overlay.
 
 This is the next step in providing in-page edit-preview toggling.
 
+=back
+
 =head1 AUTHOR
 
 Chisel Wright C<< <chiselwright@users.berlios.de> >>
