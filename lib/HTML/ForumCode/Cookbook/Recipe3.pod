@@ -2,7 +2,7 @@
 
 =head1 NAME
 
-HTML::ForumCode::Cookbook::Recipe2 - HTML, JavaScript and CSS
+HTML::ForumCode::Cookbook::Recipe3 - HTML, JavaScript and CSS
 
 =head1 SYNOPSIS
 

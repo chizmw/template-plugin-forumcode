@@ -26,7 +26,18 @@ the marked up HTML in a JSON response.
 This is useful as part of a solution to provide in-page edit-preview toggling
 (via YUI).
 
-=item L<HTML::ForumCode::Cookbook::Recipe2> - HTML, JavaScript and CSS
+=item L<HTML::ForumCode::Cookbook::Recipe2> - Catalyst Controller w/ JSON view
+
+Method(s) to add to your own controller to ForumCodify some text and return
+the marked up HTML in a JSON response.
+
+This recipe uses Catalyst::View::JSON instead of hand-crafting the JSON
+response.
+
+This is useful as part of a solution to provide in-page edit-preview toggling
+(via YUI).
+
+=item L<HTML::ForumCode::Cookbook::Recipe3> - HTML, JavaScript and CSS
 
 The HTML and JavaScript required for taking a textarea and showing a preview
 of the marked up HTML. Also includes sample CSS for the preview overlay.
