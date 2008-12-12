@@ -3,7 +3,7 @@ package HTML::ForumCode;
 use strict;
 use warnings;
 
-use version; our $VERSION = qv('0.0.5')->numify;
+use version; our $VERSION = qv('0.0.6')->numify;
 
 use Template::Plugin::HTML;
 

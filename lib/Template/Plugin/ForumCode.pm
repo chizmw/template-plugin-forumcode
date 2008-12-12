@@ -6,7 +6,7 @@ use warnings;
 use base qw{ Template::Plugin };
 use base qw{ Template::Plugin::HTML };
 
-use version; our $VERSION = qv('0.0.5')->numify;
+use version; our $VERSION = qv('0.0.6')->numify;
 
 use base qw{HTML::ForumCode};
 
